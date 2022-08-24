@@ -1,0 +1,7 @@
+{
+  "name": "CordovaUploadAndroidBug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
