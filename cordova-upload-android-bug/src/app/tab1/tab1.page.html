@@ -13,5 +13,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div style="width: 75%">
+    <div class="ar-2-1" style="position: relative">
+      <video *ngIf="video" class="fill-container" playsinline autoplay controls>
+        <source [src]="video.safeUrl" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  
+  <ion-button (click)="uploadVideo()" fill="outline" class="ion-margin-vertical" expand="block" color="secondary">Upload Video</ion-button>
+  <ion-button (click)="submit()" fill="outline" class="ion-margin-vertical" expand="block" color="primary">Submit</ion-button>
 </ion-content>
